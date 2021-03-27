@@ -16,7 +16,7 @@ This repo contains all you need to use facebook sdk in any react application.
 ```
 ```npm
 # run 
-npm install @viggin543/use-facebook-sdk@1.0.1
+npm install @viggin543/use-facebook-sdk@1.0.2
 ```
 
 Then in a react component:
