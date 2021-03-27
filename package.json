@@ -1,5 +1,5 @@
 {
-  "name": "use-facebook-sdk",
+  "name": "@viggin543/use-facebook-sdk",
   "version": "1.0.0",
   "description": "load facebook sdk in any react app",
   "main": "src/useFacebookSDK.tsx",
