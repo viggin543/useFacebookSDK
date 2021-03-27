@@ -30,4 +30,5 @@ const SomeRootLevelComponnent = () => {
     return fbSdkReady ? <p>sdk ready</p> : <p>sdk loading ...</p>
 }
 ``` 
-To test this works, open network tab and see call fo fetch facebook sdk was made /
+To test this works, open network tab and see call fo fetch facebook sdk was made 
+![image](https://user-images.githubusercontent.com/6231756/112716279-71f65480-8ef6-11eb-8d33-3c5480e2d713.png)
