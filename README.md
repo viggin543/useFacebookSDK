@@ -6,8 +6,8 @@
 For some reason facebook official docs don't provide a react example
 as if the react team and the social login team dont like each other :)
 
-In any case..
 This repo contains all you need to use facebook sdk in any react application.
+
 ---
 ## install
 ```npm
