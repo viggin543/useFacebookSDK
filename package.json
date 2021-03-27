@@ -1,0 +1,27 @@
+{
+  "name": "use-facebook-sdk",
+  "version": "1.0.0",
+  "description": "load facebook sdk in any react app",
+  "main": "src/useFacebookSDK.tsx",
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viggin543/useFacebookSDK.git"
+  },
+  "keywords": [
+    "facebook",
+    "sdk"
+  ],
+  "author": "viggin543",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viggin543/useFacebookSDK/issues"
+  },
+  "homepage": "https://github.com/viggin543/useFacebookSDK#readme"
+}
