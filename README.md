@@ -60,9 +60,8 @@ function FBLoginButton() {
       }
     })
   }
-  //Button is any custom react button comp you 
   return (
-      <Button onClick={onClick}>CONTINUE WITH FACEBOOK</Button>
+      <button onClick={onClick}>CONTINUE WITH FACEBOOK</button>
   )
 }
 
