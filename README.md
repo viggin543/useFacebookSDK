@@ -22,9 +22,9 @@ npm install @viggin543/use-facebook-sdk@1.0.2
 Then in a react component:
 
 ```javascript
-// make sure this is mounted only once
-// else every time react monnt it facebook sdk will be fetched again
-// and you dont want mayn instances of fb sdk in your app 
+// make sure this comp is mounted only once
+// else every time facebook sdk will be fetched again
+// and you dont want multiple instances of fb sdk in your app 
 const SomeRootLevelComponnent = () => {
     const { fbSdkReady } =  useFacebookSdk('<your-fb-app-id>', 'v9.0', 'en_US')
     return fbSdkReady ? <p>sdk ready</p> : <p>sdk loading ...</p>
