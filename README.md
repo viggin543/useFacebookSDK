@@ -32,3 +32,40 @@ const SomeRootLevelComponnent = () => {
 ``` 
 To test this works, open network tab and see call fo fetch facebook sdk was made 
 ![image](https://user-images.githubusercontent.com/6231756/112716279-71f65480-8ef6-11eb-8d33-3c5480e2d713.png)
+
+
+---
+
+## custom login button
+
+```js
+// a simple example on how to use FB sdk ( window.FB )
+// to implement a custom login button
+function FBLoginButton() {
+  const handleFbResponse = function (authResponse: AuthResponse) {
+    const token = authResponse?.accessToken
+      //  do something with fb tocken. like calling the backend...
+
+  }
+  const onClick = () => {
+    FB.getLoginStatus(function (response: FBAuthResponse) {
+      if (response.status == 'connected') {
+        handleFbResponse(response.authResponse)
+      } else {
+        FB.login(async function ({ authResponse, status }: FBAuthResponse) {
+          if (status == 'connected') {
+            handleFbResponse(authResponse)
+          }
+        })
+      }
+    })
+  }
+  //Button is any custom react button comp you 
+  return (
+      <Button onClick={onClick}>CONTINUE WITH FACEBOOK</Button>
+  )
+}
+
+```
+
+### cheers!
