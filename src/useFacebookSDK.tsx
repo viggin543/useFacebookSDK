@@ -14,6 +14,9 @@ declare global {
     interface Window {
         fbAsyncInit: () => void
     }
+    interface Element {
+        src: string
+    }
 }
 
 
