@@ -66,6 +66,20 @@ function FBLoginButton() {
   )
 }
 
+export interface AuthResponse {
+  accessToken: string
+  userID: string
+  expiresIn: number
+  signedRequest: string
+  graphDomain: string
+  data_access_expiration_time: number
+}
+
+export interface FBAuthResponse {
+  authResponse: AuthResponse
+  status: 'connected' | 'not_authorized' | 'unknown'
+}
+
 ```
 
 ### cheers!
